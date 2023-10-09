@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./popup.scss" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Heading for Shift Reminder</h1>
-  </body>
-
-  <script src="./popup.js"></script>
+<html>
+<head>
+  <title>Reminder App</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>Reminders</h1>
+  <ul id="reminder-list">
+    <!-- Reminder items will be added here dynamically -->
+  </ul>
+  <div id="add-reminder">
+    <input type="text" id="reminder-input" placeholder="Add a reminder">
+    <button id="add-button">Add</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
 </html>
