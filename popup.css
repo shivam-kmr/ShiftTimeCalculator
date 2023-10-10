@@ -1,0 +1,117 @@
+/* Define styles for the colored button */
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+}
+/* 
+#shift-container, #setting-popup {
+  width: 200px;
+} */
+.click-me {
+  width: 100%;
+  text-align: center;
+}
+
+#shift-container {
+  padding:1rem;
+}
+.colored-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the button when it's hovered over */
+.colored-button:hover {
+  background-color: darkblue;
+}
+
+
+/* Style the select container */
+.select-container {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Define styles for the blue-themed select */
+.blue-select {
+  background-color: #0074e4;
+  /* Blue background color */
+  color: white;
+  /* White text color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+/* Style the options within the select */
+.blue-select option {
+  background-color: #0074e4;
+  /* Blue background color for options */
+  color: white;
+  /* White text color for options */
+}
+
+/* Style the select when it's focused */
+.blue-select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 116, 228, 0.7);
+  /* Blue box shadow on focus */
+}
+
+
+.isDisbaled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.setting-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  
+}
+
+.setting-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+#setting-popup {
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding:1rem;
+  z-index: 1;
+  backdrop-filter: blur(20px);
+}
+
+
+#setting-popup .setting-close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#setting-popup .setting-close img {
+  width: 2rem;
+    height: 2rem;
+}
+
