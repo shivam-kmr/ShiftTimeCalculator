@@ -6,52 +6,45 @@
   </head>
   <body>
     <div id="shift-container">
-      <div class="click-me">
-        <button class="colored-button" id="disbale-btn" onclick="startShift()">
-          Click me
-        </button>
+      <div class="setting-icon">
+        <img src="./images/gear.png" alt="setting" id="setting-icon" />
+      </div>
+      <div class="user-login-time">
+        <div id="start-at">
+          <span> Start At: </span>
+          <span id="start-time"></span>
+        </div>
+        <div id="end-at">
+          <span> End At: </span>
+          <span id="end-time"></span>
+        </div>
 
-        <div class="setting-icon">
-          <img
-            src="./images/gear.png"
-            alt="setting"
-            onclick="toggleSetting('block')"
-          />
+        <div id="time-left">
+          <span> Time Left: </span>
+          <span id="shift-time-left"></span>
         </div>
       </div>
 
-      <div class="user-login-time">
-        <div id="start-at">Start At: <span id="start-time"></span></div>
-        <div id="end-at">End At: <span id="end-time"></span></div>
+      <div class="click-me">
+        <button class="colored-button" id="disable-btn">Mark In</button>
       </div>
     </div>
 
     <div id="setting-popup">
       <div class="setting-close">
-        <img
-          id="close"
-          src="./images/cross.png"
-          alt="setting"
-          onclick="toggleSetting('none')"
-        />
+        <img src="./images/cross.png" alt="setting" id="close-icon" />
       </div>
 
       <div class="select-container">
-        <select
-          id="shiftSelection"
-          class="blue-select"
-          onchange="shiftSelection(event.target.value)"
-        >
-          <option value="7">7</option>
-          <option value="8" [selected]="shiftTimerValue === value">8</option>
-          <option value="9" [selected]="shiftTimerValue === value" selected>
-            9
-          </option>
+        <label>Shift Hours: </label>
+        <select id="shiftSelection" class="blue-select">
+          <option value="450">7.5</option>
+          <option value="540">9</option>
         </select>
       </div>
-      <h1>setting popup</h1>
     </div>
 
     <script src="popup.js"></script>
+    <script src="background.js"></script>
   </body>
 </html>

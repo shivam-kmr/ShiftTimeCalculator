@@ -3,7 +3,10 @@
   "name": "Shift End Reminder",
   "version": "1.0",
   "description": "Go Home and live your life.",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "notifications", "tabs", "background", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
